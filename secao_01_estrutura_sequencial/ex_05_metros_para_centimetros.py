@@ -17,3 +17,7 @@ Faça um Programa que converta metros para centímetros.
 
 def converter_metros_para_centimetros():
     """Escreva aqui em baixo a sua solução"""
+    metro = float(input('digite a metragem: '))
+    cm = (metro * 100)
+    print(f'Transformando para centímetros dá {cm} cm')
+
