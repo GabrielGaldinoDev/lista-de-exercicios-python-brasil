@@ -21,3 +21,17 @@ Obs: 0 <= nota <= 10
 
 def notas_parciais(nota_1, nota_2):
     """Escreva aqui em baixo a sua solução"""
+
+    # Somando as notas parciais
+    nota_final = (nota_1 + nota_2) / 2
+
+    # Calculando as médias
+    if nota_final >= 7 and nota_final < 10 :  # Se a nota final for maior ou igual 7 ou menor que 10
+        return 'Aprovado'
+
+    elif nota_final < 7:
+        return 'Reprovado'
+
+    elif nota_final == 10:
+        return 'Aprovado com Distinção'
+
