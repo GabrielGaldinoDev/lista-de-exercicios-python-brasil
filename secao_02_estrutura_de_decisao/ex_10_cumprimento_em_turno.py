@@ -6,22 +6,31 @@ Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-m
 Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
 
     >>> cumprimentar('M')
-    'Bom dia!'
+    Bom dia!
     >>> cumprimentar('m')
-    'Bom dia!'
+    Bom dia!
     >>> cumprimentar('V')
-    'Boa tarde!'
+    Boa tarde!
     >>> cumprimentar('v')
-    'Boa tarde!'
+    Boa tarde!
     >>> cumprimentar('N')
-    'Boa noite!'
+    Boa noite!
     >>> cumprimentar('n')
-    'Boa noite!'
+    Boa noite!
     >>> cumprimentar('X')
-    'Valor Inválido!'
+    Valor Inválido!
 
 """
 
 
 def cumprimentar(turno: str):
     """Escreva aqui em baixo a sua solução"""
+
+    if turno in 'Mm':
+        print('Bom dia!')
+    elif turno in 'Vv':
+        print('Boa tarde!')
+    elif turno in 'Nn' :
+        print('Boa noite!')
+    else:
+        print('Valor Inválido!')
